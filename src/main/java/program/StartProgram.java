@@ -67,6 +67,8 @@ public class StartProgram {
             e.printStackTrace();
         }
         try {
+            statement.close();
+            preparedStatement.close();
             connection.close();
         } catch (SQLException e) {
             e.printStackTrace();
